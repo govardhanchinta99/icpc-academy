@@ -1,0 +1,30 @@
+:root {
+  font-family: Inter, system-ui, -apple-system, sans-serif;
+  color: #e6edf3;
+  background: #0d1117;
+}
+body { margin: 0; background: #0d1117; color: #e6edf3; }
+* { box-sizing: border-box; }
+.app { max-width: 1300px; margin: 0 auto; padding: 1rem; }
+header { background: #111827; border: 1px solid #1f2937; border-radius: 12px; padding: 1rem 1.2rem; margin-bottom: 1rem; }
+h1 { margin: 0 0 .2rem; font-size: 1.5rem; }
+.tabs { display: flex; gap: .5rem; flex-wrap: wrap; margin: .75rem 0; }
+button { background: #1f2937; color: #e6edf3; border: 1px solid #374151; border-radius: 8px; padding: .45rem .75rem; cursor: pointer; }
+button.active { background: #2563eb; border-color: #2563eb; }
+.layout { display: grid; grid-template-columns: 320px 1fr; gap: 1rem; }
+.roadmap, .panel { background: #111827; border: 1px solid #1f2937; border-radius: 12px; padding: 1rem; }
+.tier h3 { margin-bottom: .2rem; }
+.tier p { color: #9ca3af; margin-top: 0; font-size: .9rem; }
+.tier ul { list-style: none; padding: 0; margin: 0 0 .8rem; }
+.tier li button { width: 100%; text-align: left; margin-bottom: .3rem; }
+.section-card { background: #0b1220; border: 1px solid #1f2937; border-radius: 10px; padding: .8rem; margin-bottom: .75rem; }
+.section-card h3 { margin: 0 0 .5rem; color: #93c5fd; }
+pre { background: #020617; border: 1px solid #1f2937; border-radius: 8px; padding: .8rem; overflow: auto; color: #a7f3d0; }
+a { color: #93c5fd; }
+.topic-header { display: flex; justify-content: space-between; align-items: center; gap: 1rem; margin-bottom: .7rem; }
+.row { display: flex; gap: .5rem; flex-wrap: wrap; margin-bottom: .5rem; }
+input { background: #0b1220; color: #e6edf3; border: 1px solid #374151; border-radius: 8px; padding: .4rem .5rem; }
+.tools-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: .8rem; }
+table { width: 100%; border-collapse: collapse; }
+th, td { border-bottom: 1px solid #1f2937; text-align: left; padding: .55rem; }
+@media (max-width: 980px) { .layout { grid-template-columns: 1fr; } }
